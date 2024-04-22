@@ -8,8 +8,9 @@
             "name": "Flutter-Fitness-Dashboard-UI-master",
             "cwd": "Flutter-Fitness-Dashboard-UI-master",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
         },
+        
         {
             "name": "Flutter-Fitness-Dashboard-UI-master (profile mode)",
             "cwd": "Flutter-Fitness-Dashboard-UI-master",

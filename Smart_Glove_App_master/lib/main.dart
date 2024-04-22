@@ -1,6 +1,7 @@
-import 'package:fitness_dashboard_ui/const/constant.dart';
-import 'package:fitness_dashboard_ui/screens/main_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:fitness_dashboard_ui/screens/main_screen.dart';
+import 'package:fitness_dashboard_ui/screens/settings_screen.dart';
+import 'package:fitness_dashboard_ui/screens/dos_and_donts_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,13 +13,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Dashborad UI',
+      title: 'Dashboard UI',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: backgroundColor,
+        scaffoldBackgroundColor: const Color(0xFF171821),
         brightness: Brightness.dark,
       ),
-      home: const MainScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const MainScreen(),
+        '/settings': (context) => const SettingsScreen(), 
+        '/dos_and_donts': (context) => const DosAndDontsScreen(),
+      },
     );
   }
 }
