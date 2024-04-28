@@ -7,7 +7,12 @@ class HealthDetails {
     //HealthModel(
     //    icon: 'assets/icons/steps.png', value: "10,983", title: "Steps"),
     HealthModel(
-       icon: 'assets/icons/distance.png', value: "26.7\u00b0", title: "In the past 60 seconds"),
-    HealthModel(icon: 'assets/icons/thumbs_up.png', value: "Good", title: "   Your wrist posture is\n   within healthy range"),
+        icon: 'assets/icons/distance.png',
+        value: "26.7\u00b0",
+        title: "In the past 60 seconds"),
+    HealthModel(
+        icon: 'assets/icons/thumbs_up.png',
+        value: "Good",
+        title: "Your wrist posture is in healthy range"),
   ];
 }
